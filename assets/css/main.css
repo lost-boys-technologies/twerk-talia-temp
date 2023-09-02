@@ -1958,7 +1958,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 500px) {
 		#main > .panel {
-			min-height: 528px;
+			min-height: 556px;
 		}
 	}
 
