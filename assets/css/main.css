@@ -1863,6 +1863,50 @@ input, select, textarea {
 
 		}
 
+		@keyframes wobble-vertical-infinite {
+			0% {
+				transform: translateY(0);
+			}
+
+			16.65% {
+				transform: translateY(-10px);
+			}
+
+			33.3% {
+				transform: translateY(8px);
+			}
+
+			49.95% {
+				transform: translateY(-6px);
+			}
+
+			66.6% {
+				transform: translateY(4px);
+			}
+
+			83.25% {
+				transform: translateY(-3px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+		}
+
+		.jiggle {
+			display: inline-block;
+			position: relative;
+			top: -10px;
+			vertical-align: middle;
+			transform: translateZ(0);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			backface-visibility: hidden;
+			animation-name: wobble-vertical-infinite;
+			animation-duration: 2s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+		}
+
 /* Wrapper */
 
 	#wrapper {
